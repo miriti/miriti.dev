@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "node build.js & npx tailwindcss -i ./src/tw/style.css -o ./out/style.css && cp src/* out 2>/dev/null"
+    "build": "node build.js & npx tailwindcss -i ./src/tw/style.css -o ./out/style.css"
   },
   "author": "",
   "license": "ISC",

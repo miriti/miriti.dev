@@ -148,6 +148,10 @@ async function main() {
   fs.rmSync("out", { force: true, recursive: true });
   fs.mkdirSync("out");
 
+  for(const file of ['prism.css', 'prism.js']) {
+    fs.copyFileSync(`./src/${file}`, `./out/${file}`);
+  }
+
   const index = createIndex();
   render(index, index);
 }
