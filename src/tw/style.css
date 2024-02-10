@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+    @apply font-mono;
+}
+
+h1 {
+    @apply text-2xl font-bold;
+}
+
+a {
+    @apply text-blue-800 underline hover:no-underline;
+}
+
+ul {
+    @apply list-disc list-inside;
+}
+
+ol {
+    @apply list-decimal list-inside;
+}
+
+p, ol, ul {
+    @apply mb-2;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @apply mb-3;
+}
+
+blockquote {
+    @apply px-2 border-l-2 border-blue-950;
+}

@@ -1,0 +1,14 @@
+<%- include('_head') %>
+<%- content %>
+
+<% root.dirs.find(d => d.name === "blog").dirs.forEach(function(dir) {
+
+    const index = dir.files.find(f => f.name === "index");
+    
+    %>
+
+    <p><%- index.meta.title %></p>
+
+<% }); %>
+
+<%- include('_foot') %>
